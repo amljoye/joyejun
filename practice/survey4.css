@@ -1,0 +1,11 @@
+body{background-color:aliceblue;}
+h1{color:brown; text-align:center;}
+p{text-indent:1em;size:1em; font-family:휴먼편지체;}
+section{background-color:pink;}
+footer{background-color:orange;border-radius:10px;}
+article{color:blue;size:25px;font-weight:bold; text-indent:1em;}
+article>label{font-family:휴먼편지체; font-size:15px; color:black; font-weight:100;}
+html,body{display:inline-block;margin:0px;padding:0px;height:100%;}
+header{margin:0;padding:0;height:10%; background-color:yellow;}
+section{margin:20px;height:65%;}
+footer{height:10%;}
