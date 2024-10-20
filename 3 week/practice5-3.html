@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오 재생 리스트</title>
+    <style>
+        .numbering{
+            border: 1px solid greenyellow;
+        }
+        .songname{
+            border-bottom: 1px solid grey;
+            width: 200px;
+        }
+        input[type=button]:hover{
+            color:magenta;
+        }
+    </style>
+</head>
+<body>
+    <h2>오디오 재생 리스트</h2>
+    <hr>
+    <form>
+    <table>
+        <thead>
+            <tr>
+                <td class="numbering">1</td>
+                <td class="songname"><strong>애국가</strong></td>
+                <td><input type="button" value="재생"></td>
+                <td><input type="button" value="중지"></td>
+            </tr>
+        </thead>
+        <tr>
+            <td class="numbering">2</td>
+            <td class="songname"><strong>Moon Glow</strong></td> 
+            <td><input type="button" value="재생"></td>
+            <td><input type="button" value="중지"></td>
+        </tr>
+        <tr>
+            <td class="numbering">3</td>
+            <td class="songname"><strong>Embraceable You</strong></td>
+            <td><input type="button" value="재생"></td>
+            <td><input type="button" value="중지"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
