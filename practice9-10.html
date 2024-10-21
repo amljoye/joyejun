@@ -14,7 +14,7 @@
             margin-right:12%;
             margin-bottom:0.5%;
             margin-top:0.5%;
-            font-size:20px;
+            font-size:13px;
         }
     </style>
     <script>
@@ -23,28 +23,28 @@
             if(obj.value=="BACK"){
                 result.value=result.value.substr(0,result.value.length-1);
             }
-            if(obj.value=="CE"||obj.value=="C"){
+            else if(obj.value=="CE"||obj.value=="C"){
                 result.value=0;
             }
-            if(obj.value=="="){
+            else if(obj.value=="="){
                 result.value=eval(result.value);
             }
-            if(obj.value=="/"){
+            else if(obj.value=="/"){
                 result.value+="/";
             }
-            if(obj.value=="*"){
+            else if(obj.value=="*"){
                 result.value+="*";
             }
-            if(obj.value=="-"){
+            else if(obj.value=="-"){
                 result.value+="-";
             }
-            if(obj.value=="+"){
+            else if(obj.value=="+"){
                 result.value+="+";
             }
-            if(obj.value=="NONE"){
+            else if(obj.value=="NONE"){
                 result.value=result.value;
             }
-            if(obj.value=="1"||obj.value=="2"||obj.value=="3"||obj.value=="4"||obj.value=="5"||obj.value=="6"||obj.value=="7"||obj.value=="8"||obj.value=="9"){
+            else{
                 if(result.value=="0"){
                     result.value=obj.value;
                 }
