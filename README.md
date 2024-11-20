@@ -13,3 +13,5 @@
 9주차에 수행한 파일들: practice12-2-1.html, practice12-2-2.html, practice12-4-store.html, practice12-4-view.html
 
 10주차에 수행한 파일: practice13-6.html
+
+12주차에 수행한 파일: funcPr-practice.js
