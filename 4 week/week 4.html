@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WEEK 4</title>
+    <script>
+        function register(){
+            this.nStudent++;
+        }
+        function unregister(){
+            this.nStudent--;
+        }
+        function getStudentCount(){
+            return this.nStudent;
+        }
+        let literal ={
+            korName: "클라우드컴퓨팅",
+            engName: "Cloud Computing",
+            classCode: "V024003",
+            nStudent: 0,
+            register: function(){this.nStudent++;},
+            unregister: function(){this.nStudent--;},
+            getStudentCount: function(){return this.nStudent;}
+        }
+        function proto(){
+            this.korName="프로그래밍언어론";
+            this.engName="Programming Languages";
+            this.classCode="V024003";
+            this.nStudent=0;
+            this.register=function(){this.nStudent++;};
+            this.unregister=function(){this.nStudent--;};
+            this.getStudentCount=function(){return this.nStudent;};
+        }
+    </script>
+</head>
+<body>
+    <h1>1. 직접 객체 만들기</h1>
+    <script>
+        let right = new Object;
+        right.korName="웹프로그래밍";
+        right.engName="Web Programming";
+        right.classCode="V024003";
+        right.nStudent=0;
+        right.register=register;
+        right.unregister=unregister;
+        right.getStudentCount=getStudentCount;
+        document.write("교과목 이름 = "+right.korName+"<br>");
+        document.write("교과목 영문 이름 ="+right.engName+"<br>");
+        document.write("등록학생 수 = "+right.getStudentCount()+"<br>");
+        right.register();
+        document.write("after register, 등록 학생수 = ",right.getStudentCount()+"<br>");
+    </script>
+    <hr>
+    <h1>2. 리터럴 표기법</h1>
+    <script>
+        document.write("교과목 이름 = "+literal.korName+"<br>");
+        document.write("교과목 영문 이름 ="+literal.engName+"<br>");
+        document.write("등록 학생 수 = "+literal.getStudentCount()+"<br>");
+        literal.register();
+        document.write("after register, 등록 학생 수 = "+literal.getStudentCount()+"<br>")
+    </script>
+    <hr>
+    <h1>3. Prototype</h1>
+    <script>
+        let show= new proto;
+        document.write("교과목 이름 = "+show.korName+"<br>");
+        document.write("교과목 영문 이름 ="+show.engName+"<br>");
+        document.write("등록학생 수 = "+show.getStudentCount()+"<br>");
+        show.register();
+        document.write("after register, 등록 학생수 = ",show.getStudentCount()+"<br>");
+    </script>
+</body>
+</html>
