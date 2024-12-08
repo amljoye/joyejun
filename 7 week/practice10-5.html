@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice10-5</title>
+</head>
+<body>
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="div"></div>
+    <script>
+        let div=document.getElementById("div");
+        let now=new Date();
+        showtime();
+ 
+        function showtime(){
+            now=new Date();
+            div.innerHTML=now.toLocaleTimeString();
+            setTimeout('showtime()',1000);
+        }
+        
+    </script>
+</body>
+</html>
