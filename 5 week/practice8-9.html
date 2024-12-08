@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제8-9</title>
+    <script>
+        function addli(){
+            B=prompt("라면을 끓이는 순서를 입력하라","");
+            let p=document.getElementById("AA");
+            
+            let a=document.createElement('li');
+
+            a.innerHTML=B;
+
+            p.appendChild(a);
+        }
+    </script>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color:yellowgreen"  onclick="addli()" id="AA">
+        <li>물을 끓인다.</li>
+    </ol>    
+</body>
+</html>
