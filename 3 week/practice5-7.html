@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<style>
+    @keyframes bigger{
+        from{transform: scaleX(1);}
+        to{transform: scaleX(2);}
+    }
+    img:hover{
+        animation-name: bigger;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+</style>
+<body>
+    <h2>마우스를 올려봐요</h2>
+    <hr>
+    <img src="sponge.jpg" alt="">
+</body>
+</html>
